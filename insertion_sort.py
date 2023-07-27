@@ -4,14 +4,6 @@ entries = str(input("Enter the numbers to be sorted: "))
 num = entries.split(",")
 nums = [int(i) for i in num]
 
-# more_elements = 1
-# while more_elements == 1:
-#     element = int(input("Input element in the list: "))
-#     nums.append(element)
-#     more_elements = int(input("Are there any more elements?\nEnter 1 for Yes, 0 for No:  "))
-#     if more_elements == 0:
-#         break;
-
 print(nums)
 n = len(nums)
 
