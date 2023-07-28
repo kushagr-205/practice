@@ -12,7 +12,7 @@ def swap(x, y, i):
     nums[i] = nums[i + 1]
     nums[i + 1] = temp
 
-def insert_sort(nums, n):
+def bubble_sort(nums, n):
     count = 0
     for i in range (0, n):
         for j in range(0, n-1):
@@ -22,5 +22,5 @@ def insert_sort(nums, n):
         if count == 0:
             break;
 
-insert_sort(nums, n)
+bubble_sort(nums, n)
 print(nums)
