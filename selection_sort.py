@@ -11,7 +11,7 @@ def swap(i, ind, temp):
     nums[ind] = nums[i]
     nums[i] = temp
 
-def selection_sort(nums, n):
+def select_sort(nums, n):
     for i in range(0, n-1):
         temp = nums[i]
         for j in range(i, n-1):
@@ -21,5 +21,5 @@ def selection_sort(nums, n):
         if temp != nums[i]:
             swap(i, ind, temp)
 
-selection_sort(nums, n)
+select_sort(nums, n)
 print(nums)
