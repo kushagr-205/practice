@@ -1,0 +1,24 @@
+import time
+import random
+
+def calc_time(func):
+    def wrapper(*args,**kwargs):
+        start_time = time.time()
+        func(*args, *kwargs)
+        print("Total time taken: ",time.time()-start_time)
+    return wrapper
+
+
+@calc_time
+def func(n ,nums):
+    nums.sort()
+    print(nums[-1], nums[-2], nums[-1]*nums[-2])
+
+def main():
+    n = 100000000
+    nums = random.sample(range(n), n)
+
+    func(n, nums)
+
+if __name__ == "__main__":
+    main()
