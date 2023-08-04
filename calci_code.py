@@ -1,10 +1,10 @@
 import time
 
 with open("logging.txt", "w") as write_file:
-    append_file.write(f"ran {fun} for {time_taken}")
+    write_file.write("")
 
 def logging(fun):
-    def wrapper(*args, *kwargs):
+    def wrapper(*args, **kwargs):
         start_time = time.time()
         func(*args, *kwargs)
         time_taken = time.time() - start_time
