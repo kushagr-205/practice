@@ -1,7 +1,7 @@
 import time
 
 with open("logging.txt", "w") as write_file:
-    write_file.write("")
+    write_file.write("") 
 
 def logging(fun):
     def wrapper(*args, **kwargs):
